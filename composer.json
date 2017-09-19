@@ -9,7 +9,8 @@
             "email": "testing7672@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-master",
+    "prefer-stable": true,
 
     "require": {
         "Illuminate/support": "~5",
