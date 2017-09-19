@@ -1,22 +1,21 @@
 {
     "name": "johnsmithamk/message",
-    "description": "Sample Package in Vendor folder",
-    "type": "project",
-    "license": "0.1",
+    "description": "Sample Package in Vendor folder", 
+    "license": "MIT",
     "authors": [
         {
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    ], 
 
     "require": {
         "php": ">=7.0.0",
         "illuminate/support": "5.5.*"
     }, 
     "require-dev": { 
+        "illuminate/database": "5.5.*",
+        "mockery/mockery": "~0.9.4",
         "phpunit/phpunit": "~5.4"
     },
 
@@ -32,5 +31,7 @@
                 "test\\message\\MessageServiceProvider"
             ]
         }
-    } 
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
 }
