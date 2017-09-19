@@ -1,16 +1,16 @@
 {
     "name": "test/message",
-    "description": "Sample Package in Vendor folder",
+    "version" : "^1.3",
+    "description": "Sample Package in Vendor folder for laravel",
     "type": "project",
-    "license": "0.1",
+    "license": "MIT",
     "authors": [
         {
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
     ], 
-    "require": {
-        "test/message": "dev-master",
+    "require": { 
         "php": ">=5.5.9",
         "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x"         
     }, 
@@ -22,7 +22,9 @@
     },
 
     "extra": {
-        
+        "branch-alias": {
+            "dev-master": "0.8-dev"
+        },        
         "laravel": {
             "providers": [
                 "test\\message\\MessageServiceProvider"
