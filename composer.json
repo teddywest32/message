@@ -18,8 +18,7 @@
     ],
 
     "require": {
-       "johnsmithamk/message": "dev-master",
-       "php": ">=7.0.0",
+       "johnsmithamk/message": "dev-master", 
     }, 
 
     "require-dev": {
