@@ -10,10 +10,13 @@
             "email": "testing7672@gmail.com"
         }
     ], 
+
+    "minimum-stability": "dev",
+
     "require": { 
         "php": ">=5.5.9",
         "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
-        "johnsmithamk/message": "0.0.1.*@beta",         
+        "johnsmithamk/message": "@dev",         
     }, 
 
     "autoload":{
@@ -29,8 +32,6 @@
                 "test\\message\\MessageServiceProvider"
             ]
         }
-    },
-
-    "minimum-stability": "dev"
+    }
 }
  
