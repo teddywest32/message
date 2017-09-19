@@ -1,5 +1,6 @@
 {
-    "name": "johnsmithamk/message", 
+    "name": "johnsmithamk/message",
+    "version" : "0.0.1",
     "description": "Sample Package in Vendor folder for laravel",
     "type": "project",
     "license": "MIT",
@@ -8,7 +9,9 @@
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
-    ],  
+    ], 
+
+    "minimum-stability": "dev-master",
 
     "repositories": [
         {
@@ -18,7 +21,7 @@
     ],
 
     "require": {
-       "johnsmithamk/message": "dev-master", 
+       "johnsmithamk/message": "dev-master"
     }, 
 
     "require-dev": {
@@ -26,7 +29,7 @@
         "mockery/mockery": "~0.9.4",
         "phpunit/phpunit": "~5.4"
     },
-
+    
     "autoload":{
         "psr-4":{
             "test\\message\\": "src"
@@ -40,10 +43,6 @@
                 "test\\message\\MessageServiceProvider"
             ]
         }
-    },
-
-    "minimum-stability": "dev",
-    "prefer-stable": true
-
+    }
 }
  
