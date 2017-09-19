@@ -8,22 +8,21 @@
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
-    ],
-    "minimum-stability": "dev",
-
+    ], 
     "require": {
         "test/message": "dev-master",
-        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
-        "php": "^5.0"
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x"         
     }, 
 
     "autoload":{
         "psr-4":{
-            "test\\message\\": "vendor/test/message/src/"
+            "test\\message\\": "src"
         }
     },
 
-    "extra": { 
+    "extra": {
+        
         "laravel": {
             "providers": [
                 "test\\message\\MessageServiceProvider"
@@ -31,7 +30,6 @@
         }
     },
 
-    "require-dev": {
-        "php": ">=5.5.9"
-    }
+    "minimum-stability": "dev"
 }
+ 
