@@ -9,14 +9,16 @@
             "email": "testing7672@gmail.com"
         } 
     ],
+   "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/johnsmithamk/message"
+        }
+    ],
     "require": {
-        "php": ">=7.0.0",
-        "illuminate/http": "5.5.*",
-        "illuminate/routing": "5.5.*",
-        "illuminate/session": "5.5.*",
-        "illuminate/support": "5.5.*",
-        "illuminate/view": "5.5.*"
+        "johnsmithamk/message": "dev-master"
     },
+    
     "require-dev": {
         "illuminate/database": "5.5.*",
         "mockery/mockery": "~0.9.4",
