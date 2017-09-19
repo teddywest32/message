@@ -12,8 +12,9 @@
     "minimum-stability": "dev",
 
     "require": {
+        "Illuminate/support": "~5",
         "php": ">=5.5.9",
-        "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
+        "johnsmithamk/message": "dev-master"
     }, 
 
     "autoload":{
