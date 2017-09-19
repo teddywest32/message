@@ -1,48 +1,31 @@
 {
     "name": "johnsmithamk/message",
-    "version" : "0.0.1",
-    "description": "Sample Package in Vendor folder for laravel",
+    "description": "Sample Package in Vendor folder",
     "type": "project",
-    "license": "MIT",
+    "license": "0.1",
     "authors": [
         {
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
-    ], 
-
-    "minimum-stability": "dev-master",
-
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/johnsmithamk/message.git"
-        }
     ],
+    "minimum-stability": "dev",
 
     "require": {
-       "johnsmithamk/message": "dev-master"
+        "Illuminate/support": "~5"
     }, 
 
-    "require-dev": {
-        "illuminate/database": "5.5.*",
-        "mockery/mockery": "~0.9.4",
-        "phpunit/phpunit": "~5.4"
-    },
-    
     "autoload":{
         "psr-4":{
-            "test\\message\\": "src"
+            "test\\message\\": "vendor/test/message/src/"
         }
     },
 
-    "extra": {
-             
+    "extra": { 
         "laravel": {
             "providers": [
                 "test\\message\\MessageServiceProvider"
             ]
         }
-    }
+    } 
 }
- 
