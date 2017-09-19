@@ -1,14 +1,14 @@
 {
     "name": "johnsmithamk/message",
     "description": "Sample Package in Vendor folder", 
-    "license": "MIT",
+    "license": "MIT" ,
+     
     "authors": [
         {
             "name": "John Smith",
             "email": "testing7672@gmail.com"
-        }
-    ], 
-
+        } 
+    ],
     "require": {
         "php": ">=7.0.0",
         "illuminate/http": "5.5.*",
@@ -22,20 +22,22 @@
         "mockery/mockery": "~0.9.4",
         "phpunit/phpunit": "~5.4"
     },
-
-    "autoload":{
-        "psr-4":{
-            "test\\message\\": "vendor/test/message/src/"
-        }
+    "autoload": {
+        "psr-4": {
+            "test\\message\\": "src/"
+        } 
     },
-
-    "extra": { 
+    "extra": {
         "laravel": {
             "providers": [
                 "test\\message\\MessageServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Form": "Collective\\Html\\FormFacade",
+                "Html": "Collective\\Html\\HtmlFacade"
+            }
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": true
 }
