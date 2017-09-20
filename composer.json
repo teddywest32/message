@@ -13,6 +13,9 @@
     "require": {
         "php": ">=7.0.0", 
     }, 
+    "require-dev": {
+        "johnsmithamk/message": "~3.0"
+    },
     "autoload":{
         "psr-4":{
             "test\\message\\": "src/"
