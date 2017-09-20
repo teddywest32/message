@@ -28,6 +28,5 @@
                 "test\\message\\MessageServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    } 
 }
