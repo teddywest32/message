@@ -3,6 +3,8 @@
 namespace test\message;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
+use Illuminate\View\Compilers\BladeCompiler;
 /**
 * 
 */
