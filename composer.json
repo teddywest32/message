@@ -17,10 +17,7 @@
         }
     ], 
 
-    "require": {
-        "php": ">=7.0.0",
-        "johnsmithamk/message": "dev-master"
-    }, 
+    
     "autoload":{
         "psr-4":{
             "test\\message\\": "src/"
