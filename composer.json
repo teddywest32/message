@@ -8,8 +8,13 @@
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
-    ],  
-
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com:teddywest32/message.git"
+        }
+    ],
     "require": {
         "php": ">=7.0.0"
     }, 
