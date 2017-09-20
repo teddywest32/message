@@ -9,10 +9,19 @@
             "email": "testing7672@gmail.com"
         }
     ],
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/johnsmithamk/message.git"
+        }
+    ],
+
     "minimum-stability": "dev",
 
     "require": {
-        "Illuminate/support": "~5"
+        "Illuminate/support": "~5",
+        "supersixtwo/dblog": "^1.0"
     }, 
 
     "autoload":{
