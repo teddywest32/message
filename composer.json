@@ -1,5 +1,5 @@
 {
-    "name": "johnsmithamk/message",
+    "name": "test/message",
     "description": "Sample Package in Vendor folder",
     "type": "project",
     "license": "IND",
@@ -21,7 +21,7 @@
             "test\\message\\": "src/"
         }
     },
-
+    "minimum-stability": "dev",
     "extra": { 
         "laravel": {
             "providers": [
