@@ -2,7 +2,7 @@
     "name": "johnsmithamk/message",
     "description": "Sample Package in Vendor folder",
     "type": "project",
-    "license": "0.1",
+    "license": "IND",
     "authors": [
         {
             "name": "John Smith",
@@ -14,7 +14,7 @@
         "php": ">=7.0.0"
     }, 
     "require-dev": {
-        "johnsmithamk/message": "dev-master"
+        "phpunit/phpunit": "~5.5"
     },
     "autoload":{
         "psr-4":{
