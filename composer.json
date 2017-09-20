@@ -1,31 +1,54 @@
 {
-    "name": "johnsmithamk/message",
-    "description": "Sample Package in Vendor folder",
-    "type": "project",
-    "license": "0.1",
+    "name": "laravelcollective/html",
+    "description": "HTML and Form Builders for the Laravel Framework",
+    "license": "MIT",
+    "homepage": "http://laravelcollective.com",
+    "support": {
+        "issues": "https://github.com/LaravelCollective/html/issues",
+        "source": "https://github.com/LaravelCollective/html"
+    },
     "authors": [
         {
-            "name": "John Smith",
-            "email": "testing7672@gmail.com"
+            "name": "Adam Engebretson",
+            "email": "adam@laravelcollective.com"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylorotwell@gmail.com"
         }
-    ],  
-
+    ],
     "require": {
         "php": ">=7.0.0",
-        "johnsmithamk/message": "dev-master"
-    }, 
-    "autoload":{
-        "psr-4":{
-            "test\\message\\": "src/"
-        }
+        "illuminate/http": "5.5.*",
+        "illuminate/routing": "5.5.*",
+        "illuminate/session": "5.5.*",
+        "illuminate/support": "5.5.*",
+        "illuminate/view": "5.5.*"
     },
-
-    "extra": { 
+    "require-dev": {
+        "illuminate/database": "5.5.*",
+        "mockery/mockery": "~0.9.4",
+        "phpunit/phpunit": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Collective\\Html\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
         "laravel": {
             "providers": [
-                "test\\message\\MessageServiceProvider"
-            ]
+                "Collective\\Html\\HtmlServiceProvider"
+            ],
+            "aliases": {
+                "Form": "Collective\\Html\\FormFacade",
+                "Html": "Collective\\Html\\HtmlFacade"
+            }
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
