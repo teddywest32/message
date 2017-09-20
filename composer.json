@@ -8,25 +8,15 @@
             "name": "John Smith",
             "email": "testing7672@gmail.com"
         }
-    ],
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/johnsmithamk/message.git"
-        }
-    ],
-
-    "minimum-stability": "dev",
+    ],  
 
     "require": {
-        "Illuminate/support": "~5",
-        "supersixtwo/dblog": "^1.0"
+        "Illuminate/support": "~5", 
     }, 
 
     "autoload":{
         "psr-4":{
-            "test\\message\\": "vendor/test/message/src/"
+            "test\\message\\": "src/"
         }
     },
 
@@ -36,5 +26,6 @@
                 "test\\message\\MessageServiceProvider"
             ]
         }
-    } 
+    },
+    "minimum-stability": "dev" 
 }
