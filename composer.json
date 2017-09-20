@@ -1,22 +1,18 @@
 {
-    "name": "laravelcollective/html",
-    "description": "HTML and Form Builders for the Laravel Framework",
+    "name": "johnsmithamk/message",
+    "description": "Sample Package in Vendor folder",
     "license": "MIT",
     "homepage": "http://laravelcollective.com",
     "support": {
         "issues": "https://github.com/LaravelCollective/html/issues",
         "source": "https://github.com/LaravelCollective/html"
     },
-    "authors": [
+   "authors": [
         {
-            "name": "Adam Engebretson",
-            "email": "adam@laravelcollective.com"
-        },
-        {
-            "name": "Taylor Otwell",
-            "email": "taylorotwell@gmail.com"
+            "name": "John Smith",
+            "email": "testing7672@gmail.com"
         }
-    ],
+    ],  
     "require": {
         "php": ">=7.0.0",
         "illuminate/http": "5.5.*",
@@ -32,21 +28,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Collective\\Html\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+            "test\\message\\": "src/"
+        } 
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Collective\\Html\\HtmlServiceProvider"
-            ],
-            "aliases": {
-                "Form": "Collective\\Html\\FormFacade",
-                "Html": "Collective\\Html\\HtmlFacade"
-            }
+                 "test\\message\\MessageServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
