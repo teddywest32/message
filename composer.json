@@ -14,7 +14,7 @@
         "php": ">=7.0.0"
     }, 
     "require-dev": {
-        "johnsmithamk/message": "~5.5"
+        "johnsmithamk/message": "dev-master"
     },
     "autoload":{
         "psr-4":{
