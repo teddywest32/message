@@ -1,18 +1,12 @@
 {
     "name": "teddywest32/message-test",
     "description": "Sample Package in Vendor folder",
-    "type": "project",
+    "type": "library",
     "license": "IND",
     "authors": [
         {
             "name": "John Smith",
             "email": "testing7672@gmail.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "http://github.com:teddywest32/message.git"
         }
     ],
     "require": {
