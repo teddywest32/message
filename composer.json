@@ -1,45 +1,31 @@
 {
     "name": "johnsmithamk/message",
-    "description": "Sample Package in Vendor folder", 
-    "license": "MIT" ,
-     
+    "description": "Sample Package in Vendor folder",
+    "type": "project",
+    "license": "0.1",
     "authors": [
         {
             "name": "John Smith",
             "email": "testing7672@gmail.com"
-        } 
-    ],
-   "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/johnsmithamk/message"
         }
     ],
+    "minimum-stability": "dev",
+
     "require": {
-        "johnsmithamk/message": "dev-master"
+        "Illuminate/support": "~5"
+    }, 
+
+    "autoload":{
+        "psr-4":{
+            "test\\message\\": "vendor/test/message/src/"
+        }
     },
-    
-    "require-dev": {
-        "illuminate/database": "5.5.*",
-        "mockery/mockery": "~0.9.4",
-        "phpunit/phpunit": "~5.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "test\\message\\": "src/"
-        } 
-    },
-    "extra": {
+
+    "extra": { 
         "laravel": {
             "providers": [
                 "test\\message\\MessageServiceProvider"
-            ],
-            "aliases": {
-                "Form": "Collective\\Html\\FormFacade",
-                "Html": "Collective\\Html\\HtmlFacade"
-            }
+            ]
         }
-    },
-    "minimum-stability": "dev-master",
-    "prefer-stable": true
+    } 
 }
